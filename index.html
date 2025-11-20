@@ -93,6 +93,8 @@
   </style>
 </head>
 <body>
+<script>(function(){function makeFocusable(){document.querySelectorAll('.heat,.orbit-item,.calib-wrap,#ring,.tabs,.circle1,.circle2').forEach(el=>{if(!el.hasAttribute('tabindex'))el.setAttribute('tabindex','0');});}function mapEvents(){document.addEventListener('pointerenter',e=>{e.target.dispatchEvent(new MouseEvent('mouseenter',{bubbles:false}));},true);document.addEventListener('pointerleave',e=>{e.target.dispatchEvent(new MouseEvent('mouseleave',{bubbles:false}));},true);document.addEventListener('focusin',e=>{e.target.dispatchEvent(new MouseEvent('mouseenter',{bubbles:false}));},true);document.addEventListener('focusout',e=>{e.target.dispatchEvent(new MouseEvent('mouseleave',{bubbles:false}));},true);document.addEventListener('touchstart',e=>{e.target.dispatchEvent(new MouseEvent('mouseenter',{bubbles:false}));},{passive:true});document.addEventListener('touchend',e=>{e.target.dispatchEvent(new MouseEvent('mouseleave',{bubbles:false}));},false);document.addEventListener('touchcancel',e=>{e.target.dispatchEvent(new MouseEvent('mouseleave',{bubbles:false}));},false);}if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',()=>{makeFocusable();mapEvents();});}else{makeFocusable();mapEvents();}})();</script>
+
   <div class="tabs" role="tablist" aria-label="方案切换">
     <button class="tab active" role="tab" aria-selected="true" data-scheme="s1">方案1</button>
     <button class="tab" role="tab" aria-selected="false" data-scheme="s2">方案2</button>
